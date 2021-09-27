@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  font-family: "Source Serif Pro", serif;
+  background: #f6f6f3;
+  overflow-x: hidden;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f0ead5;
+  width: 75%;
+  max-width: 955px;
+  margin: 0rem auto;
+  padding: 1.25rem 0;
+  z-index: 1;
+}
+
+.headerbackground {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  background-color: #f0ead5;
+  padding: 2.85rem 100%;
+}
+
+
+.header a {
+  float: left;
+  color: #37322c;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1.25px;
+  word-spacing: 1.5px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header a.logo {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -1.25px;
+  word-spacing: 5px;
+}
+
+.header a:hover {
+  background-color: rgba(33, 124, 126, 0.1);
+  color: black;
+}
+
+.header a.active {
+  background-color: #217C7E;
+  text-decoration: underline;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.paragraph {
+  width: 75%;
+  max-width: 940px;
+  margin: 0rem auto 1rem auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(0,1fr 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "greeting greeting profilepic"
+    "para para profilepic"
+    "par par profilepic";
+}
+
+.greeting {
+  grid-area: greeting;
+  font-size: 2.7rem;
+  color: #37322c;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -2px;
+}
+
+.para{
+  grid-area: para;
+  line-height: 165%;
+  font-size: 110%;
+  margin-top: 0.4rem;
+}
+.par{
+  grid-area: par;
+  line-height: 165%;
+  font-size: 110%;
+  margin-top: -1rem;
+}
+.profilepic {
+  grid-area: profilepic;
+  position: relative;
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  margin-top: 4.7rem;
+  margin-left: 4.6rem;
+}
+.para2 {
+  color: #37322c;
+  font-size: 2.15rem;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -2px;
+  margin-bottom: 0.75rem;
+  margin-top: 5rem;
+}
+
+.para3 {
+  font-size: 110%;
+  margin-top: 0.75rem;
+  line-height: 165%;
+}
+
+.numbered {
+  font-size: 110%;
+  line-height: 165%;
+}
+
+.para4 {
+  font-size: 110%;
+  line-height: 165%;
+}
+
+.but {
+  position: absolute;
+  left: 50%;
+  background-color: #217C7E;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  transform: translate(-50%, 5%);
+  cursor: pointer;
+
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+.hyperlink {
+  color: #289294;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.hyperlink:hover {
+  text-decoration: underline;
+}
+.para5 {
+  font-size: 110%;
+  line-height: 165%;
+}
+
+
+#para2 {
+  color: #37322c;
+  font-size: 2.15rem;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -2px;
+  margin-bottom: 0.75rem;
+  margin-top: 4.25rem;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 14% 75%;
+  column-gap: 4.5%;
+  margin: 3rem 0;
+}
+
+.project-card-title {
+  padding: 0;
+  margin: 0;
+  font-size: 130%;
+  font-weight: 700;
+  color: #da5902;
+  font-family: "Open Sans", sans-serif;
+}
+
+.project-card-description {
+  font-size: 110%;
+  line-height: 165%;
+
+}
+
+.glowscriptpic {
+  max-width: 115%;
+  border-radius: 0.5rem;
+}
+
+.project-link {
+  font-size: 110%;
+  color: #da5902;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.project-card-link {
+  color: #da5902;
+  text-decoration: none;
+}
+
+.project-card-link2 {
+  margin-left: 1rem;
+  color: #da5902;
+  text-decoration: none;
+}
+
+.project-card-link::before {
+  content: "";
+  margin-right: 0;
+}
+
+.remotecaricon {
+  max-width: 115%;
+  border-radius: 0.5rem;
+}
+
+.speedometerpic {
+  max-width: 115%;
+}
+
+.brakelightpic {
+  max-width: 115%;
+}
